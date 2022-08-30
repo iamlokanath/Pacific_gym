@@ -1,0 +1,40 @@
+#contact{
+    padding: 100px 0px;
+    width: 100vw;
+    height: 90vh;  
+}
+.contact-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .contact-left-col{
+    flex-basis: 50%;
+    height: 100%;
+} */
+.contact-right-col{
+    height: 100%;
+    flex-basis: 50%;
+    /* text-align: center; */
+}
+.contact-right-col img{
+    width: 100%;
+    transition: 1s;
+}
+.contact-left-col{
+    max-width: 400px;
+    margin: auto;
+}
+.contact-left-col h1{
+    font-size: 50px;
+}
+.contact-left-col h1 span{
+    color: #38b7ff;
+}
+
+.contact-left-col p{
+    font-size: 2rem;
+    text-align: justify;
+    margin: 15px 0px;
+}

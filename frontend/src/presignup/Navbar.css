@@ -1,0 +1,19 @@
+.Navbar{
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+}

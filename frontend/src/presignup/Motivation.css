@@ -1,0 +1,54 @@
+#motivation{
+    padding: 100px 0px;
+    width: 100vw;
+    height: 90vh;  
+}
+.motivation-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .about-left-col{
+    flex-basis: 50%;
+    height: 100%;
+} */
+.motivation-right-col{
+    height: 100%;
+    flex-basis: 50%;
+    text-align: center;
+}
+.motivation-right-col img{
+    width: 80%;
+    transition: 1s;
+}
+.motivation-left-col{
+    max-width: 400px;
+    margin: auto;
+}
+.motivation-left-col h1{
+    font-size: 50px;
+}
+.motivation-left-col h1 span{
+    color: #38b7ff;
+}
+.motivation-left-col p{
+    font-size: 2rem;
+    text-align: justify;
+    margin: 15px 0px;
+}
+button {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background-color: #1c8adb;
+}
