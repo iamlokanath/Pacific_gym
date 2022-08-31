@@ -11,7 +11,7 @@ import NavBar from "../presignup/Navbar"
 const SignUp = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -24,13 +24,13 @@ const SignUp = () => {
 
   const validateForm = () => {
     return (
-      //   firstName.length > 0 &&
-      //   lastName.length > 0 &&
-      //   phoneNumber.length > 0 &&
-      //   email.length > 0 &&
-      //   password.length > 0 &&
-      //   password === confirmPassword
-      true
+        firstName.length > 0 &&
+        lastName.length > 0 &&
+        phone.length > 0 &&
+        email.length > 0 &&
+        password.length > 0 &&
+        password === confirmPassword
+      // true
     );
   };
 
@@ -49,25 +49,20 @@ const SignUp = () => {
 
   const handleConfirmationSubmit = async (event) => {
     event.preventDefault();
-
-    // UtilCtx.setLoader(true);
-
     try {
       await Auth.confirmSignUp(email, confirmationCode);
       await Auth.signIn(email, password);
       userHasAuthenticated(true);
-      await API.post("UserApi", "/userdata", {
+      await API.post("Pacific", "/UserData", {
         body: {
-          emailId: email,
+          email: email,
           firstName: firstName,
           lastName: lastName,
+          phone: phone,
         },
       });
       nav("/");
-      //   const userdata = await API.get("user", "/userdata");
-      //   UserDataCtx.setUserData(userdata);
-      //   UserCtx.setIsLogged(true);
-      //   UtilCtx.setLoader(false);
+      console.log("Uploaded")
     } catch (e) {
       console.log(e);
       //   UtilCtx.setLoader(false);
@@ -99,6 +94,7 @@ const SignUp = () => {
             <input
               autoFocus
               type="text"
+              name="lastname"
               className="input-box"
               placeholder="Last Name"
               value={lastName}
@@ -110,9 +106,9 @@ const SignUp = () => {
               type="number"
               className="input-box"
               placeholder="Phone Number"
-              value={phoneNumber}
+              value={phone}
               onChange={(e) => {
-                setPhoneNumber(e.target.value);
+                setPhone(e.target.value);
               }}
             />
             <input

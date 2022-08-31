@@ -1,22 +1,31 @@
 import React from 'react'
-import "./Dashboard.css";
+import humanimg from "../img/humanimg.png";
+import "./Dashboard.css"
+
+import { useAppContext } from '../lib/contextLib';
 
 const Dashboard = () => {
+  const {data} = useAppContext();
   return (
     <>
-        <div className='container'>
-            {/* <div className='container-box'>
-                <h3>Name: Lokanath Panda</h3>
+     <div className="dashboard-up-form">
+       <img src={humanimg} alt=''></img>
+        
+    
+            <div className='container'>
+                
+            <h3>{data[0]?data[0].firstName + data[0].lastName:"Lokanath Panda"}</h3>
+                
+                <br />
+                
+                <h3>{data[0]?data[0].email:"lokanathpanda@123.gmail.com"}</h3>
+              
+                <br />
+                
+                <h3>{data[0]?data[0].phone:"8144496407"}</h3>
             </div>
-            <br />
-            <div className='container-box'>
-                <h3>Email id: lokanathpanda@123</h3>
-            </div>
-            <br />
-            <div className='container-box'>
-                <h3>Phone Number: 8144496407</h3>
-            </div> */}
-        </div>
+    
+    </div>
     </>
   )
 }
