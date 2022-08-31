@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section id="footer">
 
-          <div class="brand">
+          <div className="brand">
             <img src={back2} alt=''></img>
           </div>
 
@@ -18,18 +18,18 @@ const Footer = () => {
             <p className="texter">Adress: AT/PO: Keonjhar, Dist: Keonjhar, Pin: 758083</p>
           </div>
 
-          <div class="social">
+          <div className="social">
             <a href="https://www.facebook.com/" >
-              <i class="fa-brands fa-facebook-f"></i>
+              <i className="fa-brands fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/" >
-              <i class="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram"></i>
             </a>
             <a href="https://www.linkedin.com/in/lokanath-panda-642193238/" >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a href="https://twitter.com/Lokanat48464605" >
-              <i class="fa-brands fa-twitter"></i>
+              <i className="fa-brands fa-twitter"></i>
             </a>
           </div>
 

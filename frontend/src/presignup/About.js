@@ -7,8 +7,8 @@ const About = () => {
   return (
    
     <section id="about">
-    <div class="about-row">
-        <div class="about-left-col">
+    <div className="about-row">
+        <div className="about-left-col">
             <h1> About <span>Us</span></h1>
             <p>
                 This is a place where people go to train and exercise, but also to unwind, socialize, and recharge. Therefore, a good gym is a facility that promotes physical activity, provides a safe, functional, and comfortable workout environment, and creates a pleasant and enjoyable atmosphere for recreation and socialization.  {isreadmore?"":"...."}
@@ -17,7 +17,7 @@ const About = () => {
             </p>
             
         </div>
-        <div class="about-right-col">
+        <div className="about-right-col">
         <img src={aboutimg} alt=''></img>
     
         </div>

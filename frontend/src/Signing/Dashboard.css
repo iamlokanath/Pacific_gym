@@ -1,0 +1,21 @@
+.container {
+    border: 2px solid rgb(199, 34, 34);
+    margin: 106px 80px;
+    padding: 75px;
+    width: 34%;
+    border-radius: 28px;
+
+}
+
+
+
+.container h3 {
+    text-align: center;
+}
+/* 
+.container button {
+    display: block;
+    margin: auto;
+    width: 98%;
+
+} */

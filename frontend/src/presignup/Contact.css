@@ -6,16 +6,16 @@
 .contact-row{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start ;
+    flex-direction: row-reverse;
 }
 /* .contact-left-col{
     flex-basis: 50%;
     height: 100%;
 } */
 .contact-right-col{
-    height: 100%;
-    flex-basis: 50%;
+    height: 40rem;
     /* text-align: center; */
 }
 .contact-right-col img{
